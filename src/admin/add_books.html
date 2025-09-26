@@ -12,13 +12,18 @@
         </header>
 
         <div id="content">
-            <p>Welcome to our Library Management System.</p>
-            <ul>
-                <li><a href="add_books.html" id="add_booksBtn">Add New Books</a></li>
-                <li><a href="manage_books.html" id="manage_booksBtn">Edit Books</a></li>
-                <li><a href="remove_books.html" id="remove_booksBtn">Remove Books</a></li>
-                <li><a href="../index.html" id="logoutBtn">Logout</a></li>
-            </ul>
+            <form action="../php/admin_add_books.php" method="post">
+                <label for="book_name">Book Title:</label><br>
+                <input type="text" id="book_name" name="name" required><br>
+
+                <label for="book_author">Author:</label><br>
+                <input type="text" id="book_author" name="author"><br>
+
+                <label for="book_description">Description:</label><br>
+                <input type="text" id="book_description" name="description"><br><br>
+
+                <input type="submit" value="Add Book">
+            </form> 
         </div>
 
         <footer>
