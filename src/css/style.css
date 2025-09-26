@@ -1,0 +1,56 @@
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#loginButtons {
+    background-color: aquamarine;
+    max-width: fit-content;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 20px 20px 20px;
+    border-radius: 15px;
+}
+
+#adminBtn, #userBtn {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 10px 2px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+    box-shadow: inset 0 0 0 0 #02abff;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+#adminBtn:hover, #userBtn:hover {
+    box-shadow: inset 400px 0 0 0 #0083cf;
+}
+
+#adminBtn:active, #userBtn:active {
+    box-shadow: inset 0 0 0 0 aqua;
+    -webkit-transition: ease-out 0s;
+    -moz-transition: ease-out 0s;
+    transition: ease-out 0s;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
