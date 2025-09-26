@@ -1,18 +1,21 @@
 <?php
-    $name = $_POST['name'];
-    $author = $_POST['author'];
-    $description = $_POST['description'];
+    $servername = "localhost"; // Your database host
+    $username = "root"; // Your database username
+    $password = "rootpassword"; // Your database password
+    $dbname = "library-db"; // Your database name
 
-    // Database connection
-    $conn = new mysqli('localhost', 'root', 'rootpassword', 'library');
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-    } else {
-        $stmt = $conn->prepare("INSERT INTO books-db (book_name, book_author, book_description) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $name, $author, $description);
-        $stmt->execute();
-        echo "New book added successfully";
-        $stmt->close();
-        $conn->close();
     }
+    echo "Connected successfully";
+
+    // You can now execute SQL queries using $conn->query() or prepared statements
+    // ...
+
+    // Close connection (optional, as PHP closes it automatically at script end)
+    $conn->close();
 ?>
