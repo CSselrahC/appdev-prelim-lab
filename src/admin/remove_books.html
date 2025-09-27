@@ -11,6 +11,14 @@
             <h1>Library Management System</h1>
         </header>
 
+        <div id="content">
+            <form action="../php/admin_remove_books.php" method="post">
+                <label for="book_id">Enter Book ID to Remove:</label>
+                <input type="text" id="book_id" name="book_id" required>
+                <button type="submit" id="remove_bookBtn">Remove Book</button>
+            </form>
+        </div>
+
         <footer>
             <p>Simple Library Management System</p>
             <p>CCS112 - Applications Development and Emerging Technologies</p>
