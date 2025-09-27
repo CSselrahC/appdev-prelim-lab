@@ -12,8 +12,12 @@
         </header>
 
         <div id="content">
-            <p>Welcome to our Library Management System.</p>
-            
+            <div class="search-box">
+            <form method="GET" action="../php/user_search_books.php">
+                <input type="text" name="query" placeholder="Search for a book...">
+                <button type="submit">Search</button>
+            </form>
+    </div>
         </div>
 
         <footer>
