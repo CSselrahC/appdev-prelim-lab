@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borrow a Book</title>
 </head>
+
 <body>
     <h2>Borrow a Book</h2>
 
     <!-- Form sends data to borrow.php -->
-    <form action="borrow.php" method="POST">
+    <form action="../php/user_borrow_books.php" method="POST">
         <label for="borrower_name">Your Name:</label><br>
         <input type="text" id="borrower_name" name="borrower_name" required><br><br>
 
@@ -25,4 +27,5 @@
         <button type="submit">Borrow Book</button>
     </form>
 </body>
+
 </html>
