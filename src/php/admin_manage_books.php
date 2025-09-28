@@ -65,6 +65,7 @@ if ($mysqli->connect_error) {
     $mysqli->close();
     ?>
 
+    <li><a href="../admin/admin.html" id="adminBtn">Go Back</a></li>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>
