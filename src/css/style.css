@@ -187,6 +187,96 @@ th {
     background-color: #6e5434;
 }
 
+/* MANAGE BOOKS DESIGN */
+
+/* Content */
+#content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Form container */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 22px;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2c3e50;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #34495e;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#adminBtn {
+    text-decoration: none;
+    background: #3498db;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+#adminBtn:hover {
+    background: #2980b9;
+}  
+  
 /* User Search Books Page */
 /* SEARCH BAR CONTAINER */
 .search-container {
