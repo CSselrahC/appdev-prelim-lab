@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library MS</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+    <br>
+
 <?php
 $mysqli = new mysqli("db", "root", "rootpassword", "library-db");
 
@@ -36,3 +50,17 @@ if ($result->num_rows > 0) {
 }
 $mysqli->close();
 ?>
+
+    <a href="../admin/admin.html" id="backBtn">Go Back</a>
+    <footer>
+        <p>Simple Library Management System</p>
+        <p>CCS112 - Applications Development and Emerging Technologies</p>
+
+        <div id="contacts">
+            <p>Contact us:
+                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

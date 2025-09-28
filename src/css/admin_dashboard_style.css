@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 body {
@@ -78,55 +80,41 @@ header h1 {
 
 /* Different colors per action */
 #add_booksBtn {
-    background: #27ae60;
+    background: #8b6f47;
 }
 
 #add_booksBtn:hover {
-    background: #1e8449;
+    background: #6e5434;
     transform: translateY(-2px);
 }
 
 #manage_booksBtn {
-    background: #f39c12;
+    background: #8b6f47;
 }
 
 #manage_booksBtn:hover {
-    background: #d68910;
+    background: #6e5434;
     transform: translateY(-2px);
 }
 
 #remove_booksBtn {
-    background: #e74c3c;
+    background: #8b6f47;
 }
 
 #remove_booksBtn:hover {
-    background: #c0392b;
+    background: #6e5434;
     transform: translateY(-2px);
 }
 
 #logoutBtn {
-    background: #3498db;
+    background: #8b6f47;
 }
 
 #logoutBtn:hover {
-    background: #2980b9;
+    background: #6e5434;
     transform: translateY(-2px);
 }
-
-#backBtn {
-    margin: 20px auto 20px auto;
-    padding: 10px 20px;
-    background-color: #8b6f47;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-}
-
-#backBtn:hover {
-    background-color: #6e5434;
-}
-
+    
 footer {
     background-color: #8b6f47;
     color: #ddd;
