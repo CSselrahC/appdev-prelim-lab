@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library MS</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borrow a Book</title>
-</head>
+    <body>
+        <header>
+            <h1>Library Management System</h1>
+        </header>
 
-<body>
-    <h2>Borrow a Book</h2>
+        <div id="borrowContent">
+            <p>Welcome to our Library Management System.</p>
+            <p>Please fill out the form below to borrow a book.</p>
+            <form action="../php/user_borrow_books.php" method="POST">
+                <label for="borrower_name">Your Name:</label><br>
+                <input type="text" id="borrower_name" name="borrower_name" required><br><br>
 
-    <!-- Form sends data to borrow.php -->
-    <form action="../php/user_borrow_books.php" method="POST">
-        <label for="borrower_name">Your Name:</label><br>
-        <input type="text" id="borrower_name" name="borrower_name" required><br><br>
+                <label for="book_id">Enter Book ID:</label><br>
+                <input type="text" id="book_id" name="book_id" required><br><br>
 
-        <label for="book_title">Select Book:</label><br>
-        <select id="book_title" name="book_title" required>
-            <option value="">-- Choose a Book --</option>
-            <option value="To Kill a Mockingbird">To Kill a Mockingbird</option>
-            <option value="1984">1984</option>
-            <option value="The Great Gatsby">The Great Gatsby</option>
-            <option value="Moby Dick">Moby Dick</option>
-        </select><br><br>
+                <button type="submit">Borrow Book</button>
+            </form>
+        </div>
 
-        <button type="submit">Borrow Book</button>
-    </form>
-</body>
+        <a href="user.html" id="backBtn">Go Back</a>
 
+        <footer>
+            <p>Simple Library Management System</p>
+            <p>CCS112 - Applications Development and Emerging Technologies</p>
+
+            <div id="contacts">
+                <p>Contact us:
+                    <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a>
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
