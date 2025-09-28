@@ -30,12 +30,14 @@ header h1 {
 
 #borrowContent {
     display: flex;
-    flex-direction: column; /* to make the elements vertical instead of horizontal */
+    flex-direction: column;
+    /* to make the elements vertical instead of horizontal */
     justify-content: center;
     align-items: center;
     line-height: 30px;
     padding: 40px 20px;
-    min-height: calc(100vh - 160px); /* keeps footer at bottom */
+    min-height: calc(100vh - 160px);
+    /* keeps footer at bottom */
 }
 
 /* Form styles */
@@ -43,7 +45,7 @@ header h1 {
     background: #fff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
     line-height: 15px;
@@ -67,7 +69,7 @@ header h1 {
 .borrowInput:focus {
     border-color: #2c3e50;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(44,62,80,0.08);
+    box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.08);
 }
 
 /* Submit button */
@@ -86,7 +88,8 @@ header h1 {
 }
 
 #borrowSubmitBtn:hover {
-    background: #6e5434;;
+    background: #6e5434;
+    ;
 }
 
 #backBtn {
@@ -116,7 +119,7 @@ footer p {
 }
 
 footer a {
-    color: #d4a373;
+    color: #f9f2f2;
     text-decoration: none;
     font-weight: bold;
 }

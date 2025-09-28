@@ -61,7 +61,8 @@
 
         <div id="contacts">
             <p>Contact us:
-                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a>
+                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a> | 
+                <a href="https://github.com/cntaxc" target="_blank">cntaxc</a>
             </p>
         </div>
     </footer>

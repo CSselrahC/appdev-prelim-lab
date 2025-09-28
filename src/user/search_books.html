@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library MS</title>
     <link rel="stylesheet" type="text/css" href="../css/search_book_style.css">
 </head>
-    <body>
-        <header>
-            <h1>Library Management System</h1>
-        </header>
 
-        <div class="search-container">
-            <form method="GET" action="../php/user_search_books.php">
-                <input type="text" name="query" placeholder="Search for a book...">
-                <button type="submit">Search</button>
-            </form>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
+    <div class="search-container">
+        <form method="GET" action="../php/user_search_books.php">
+            <input type="text" name="query" placeholder="Search for a book...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <a href="../user/user.html" id="backBtn">Go Back</a>
+    <footer>
+        <p>Simple Library Management System</p>
+        <p>CCS112 - Applications Development and Emerging Technologies</p>
+
+        <div id="contacts">
+            <p>Contact us:
+                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a> |
+                <a href="https://github.com/cntaxc" target="_blank">cntaxc</a>
+            </p>
         </div>
-        <a href="../user/user.html" id="backBtn">Go Back</a>
-        <footer>
-            <p>Simple Library Management System</p>
-            <p>CCS112 - Applications Development and Emerging Technologies</p>
+    </footer>
+</body>
 
-            <div id="contacts">
-                <p>Contact us:
-                    <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a>
-                </p>
-            </div>
-        </footer>
-    </body>
 </html>

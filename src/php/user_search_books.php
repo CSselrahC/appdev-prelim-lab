@@ -51,14 +51,15 @@ if ($result->num_rows > 0) {
 $mysqli->close();
 ?>
 
-    <a href="../admin/admin.html" id="backBtn">Go Back</a>
+    <a href="../user/search_books.html" id="backBtn">Go Back</a>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>
 
         <div id="contacts">
             <p>Contact us:
-                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a>
+                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a> | 
+                <a href="https://github.com/cntaxc" target="_blank">cntaxc</a>
             </p>
         </div>
     </footer>
