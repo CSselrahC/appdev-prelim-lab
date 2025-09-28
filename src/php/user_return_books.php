@@ -54,6 +54,28 @@
             echo "Book not found.";
         }
 
+        $sql = "SELECT id, book_name, book_author, book_description, borrow_status, borrower FROM `books-table`";
+        $result = $conn->query($sql);
+
+        if ($result && $result->num_rows > 0) {
+            echo "<h2>Books Table</h2>";
+            echo "<table border='1' cellpadding='8' cellspacing='0'>";
+            echo "<tr><th>ID</th><th>Book Name</th><th>Author</th><th>Description</th><th>Borrow Status</th><th>Borrower</th></tr>";
+            while($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . $row["id"]. "</td>";
+                echo "<td>" . $row["book_name"]. "</td>";
+                echo "<td>" . $row["book_author"]. "</td>";
+                echo "<td>" . $row["book_description"]. "</td>";
+                echo "<td>" . $row["borrow_status"]. "</td>";
+                echo "<td>" . $row["borrower"]. "</td>";
+                echo "</tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "<p>No books found.</p>";
+        }
+
         $stmt->close();
         $conn->close();
     ?>
