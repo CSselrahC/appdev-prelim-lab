@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Library MS</title>
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
-    </head>
 
-    <body>
-        <header>
-            <h1>Library Management System</h1>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library MS</title>
+    <link rel="stylesheet" type="text/css" href="../css/user_borrowbooks_style.css">
+</head>
 
-        <div id="borrowContent">
-            <p>Welcome to our Library Management System.</p>
-            <p>Please fill out the form below to borrow a book.</p>
-            <form action="../php/user_borrow_books.php" method="POST">
-                <label for="borrower_name">Your Name:</label><br>
-                <input type="text" id="borrower_name" name="borrower_name" required><br><br>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
 
-                <label for="book_id">Enter Book ID:</label><br>
-                <input type="text" id="book_id" name="book_id" required><br><br>
+    <div id="borrowContent">
+        <p>Welcome to our Library Management System.</p>
+        <p>Please fill out the form below to borrow a book.</p>
+        <form action="../php/user_borrow_books.php" method="POST" id="borrowForm">
+            <label for="borrower_name" class="borrowLabel">Your Name:</label><br>
+            <input type="text" class="borrowInput" id="borrower_name" name="borrower_name" required><br><br>
 
-                <button type="submit">Borrow Book</button>
-            </form>
+            <label for="book_id" class="borrowLabel">Enter Book ID:</label><br>
+            <input type="text" class="borrowInput" id="book_id" name="book_id" required><br><br>
+
+            <button type="submit" id="borrowSubmitBtn">Borrow Book</button>
+        </form>
+    </div>
+
+    <a href="user.html" id="backBtn">Go Back</a>
+
+    <footer>
+        <p>Simple Library Management System</p>
+        <p>CCS112 - Applications Development and Emerging Technologies</p>
+
+        <div id="contacts">
+            <p>Contact us:
+                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a>
+            </p>
         </div>
+    </footer>
+</body>
 
-        <a href="user.html" id="backBtn">Go Back</a>
-
-        <footer>
-            <p>Simple Library Management System</p>
-            <p>CCS112 - Applications Development and Emerging Technologies</p>
-
-            <div id="contacts">
-                <p>Contact us:
-                    <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a>
-                </p>
-            </div>
-        </footer>
-    </body>
 </html>
