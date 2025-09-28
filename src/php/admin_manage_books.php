@@ -68,7 +68,7 @@
     $mysqli->close();
     ?>
 
-    <li><a href="../admin/admin.html" id="goBackBtn">Go Back</a></li>
+    <a href="../admin/admin.html" id="backBtn">Go Back</a>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>

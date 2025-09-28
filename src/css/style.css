@@ -187,10 +187,65 @@ th {
     background-color: #6e5434;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 016fa4deee4668ed0ceb98d350bd396d9ef53691
+li {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#adminBtn {
+    text-decoration: none;
+    background: #3498db;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+#adminBtn:hover {
+    background: #2980b9;
+
+}  
+  
+/* User Search Books Page */
+/* SEARCH BAR CONTAINER */
+.search-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* SEARCH INPUT */
+.search-container input[type="text"] {
+    width: 350px;
+    padding: 12px 15px;
+    border: 2px solid #8B5E3C;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #5C3D2E;
+    box-shadow: 0 0 5px #8B5E3C;
+}
+
+/* SEARCH BUTTON */
+.search-container button {
+    padding: 12px 20px;
+    border: none;
+    background: #8B5E3C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background: #5C3D2E;
+}
+
 /* MANAGE BOOKS DESIGN */
 
 /* Content */
@@ -262,68 +317,16 @@ th {
     background: #34495e;
 }
 
-li {
-    list-style: none;
-    text-align: center;
-    margin: 20px 0;
-}
-
-#adminBtn {
+#backBtn {
+    margin: 20px auto 20px auto;
+    padding: 10px 20px;
+    background-color: #8b6f47;
+    color: white;
     text-decoration: none;
-    background: #3498db;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 6px;
-    transition: background 0.3s ease;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
 }
 
-#adminBtn:hover {
-    background: #2980b9;
-<<<<<<< HEAD
-=======
-=======
-}  
-  
->>>>>>> 016fa4deee4668ed0ceb98d350bd396d9ef53691
-/* User Search Books Page */
-/* SEARCH BAR CONTAINER */
-.search-container {
-    text-align: center;
-    margin: 30px auto;
-}
-
-/* SEARCH INPUT */
-.search-container input[type="text"] {
-    width: 350px;
-    padding: 12px 15px;
-    border: 2px solid #8B5E3C;
-    border-radius: 25px 0 0 25px;
-    outline: none;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.search-container input[type="text"]:focus {
-    border-color: #5C3D2E;
-    box-shadow: 0 0 5px #8B5E3C;
-}
-
-/* SEARCH BUTTON */
-.search-container button {
-    padding: 12px 20px;
-    border: none;
-    background: #8B5E3C;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 0 25px 25px 0;
-    transition: 0.3s;
-}
-
-.search-container button:hover {
-    background: #5C3D2E;
-<<<<<<< HEAD
->>>>>>> 3d85e006f76547c370efaf424718e5d81ab03e65
-=======
->>>>>>> 016fa4deee4668ed0ceb98d350bd396d9ef53691
+#backBtn:hover {
+    background-color: #6e5434;
 }
