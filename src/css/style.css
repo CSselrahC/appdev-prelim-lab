@@ -188,6 +188,9 @@ th {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 016fa4deee4668ed0ceb98d350bd396d9ef53691
 /* MANAGE BOOKS DESIGN */
 
 /* Content */
@@ -276,7 +279,12 @@ li {
 
 #adminBtn:hover {
     background: #2980b9;
+<<<<<<< HEAD
 =======
+=======
+}  
+  
+>>>>>>> 016fa4deee4668ed0ceb98d350bd396d9ef53691
 /* User Search Books Page */
 /* SEARCH BAR CONTAINER */
 .search-container {
@@ -314,5 +322,8 @@ li {
 
 .search-container button:hover {
     background: #5C3D2E;
+<<<<<<< HEAD
 >>>>>>> 3d85e006f76547c370efaf424718e5d81ab03e65
+=======
+>>>>>>> 016fa4deee4668ed0ceb98d350bd396d9ef53691
 }
