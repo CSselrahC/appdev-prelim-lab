@@ -20,27 +20,37 @@
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $book_id = $_POST['id'];
-        $edit_Name = $_POST['name'];
-        $edit_Author = $_POST['author'];
-        $edit_Description = $_POST['description'];
+        $book_id = $_POST['book_id'];
+        $borrower_name = $_POST['borrower_name'];
 
-        $sql = "UPDATE `books-table` 
-                SET book_name = '$edit_Name', book_author = '$edit_Author', book_description = '$edit_Description' 
-                WHERE id = $book_id";
+        $sql = "SELECT borrow_status FROM `books-table` WHERE id = $book_id";
 
-        $stmt = $mysqli->prepare($sql);
-        if (!$stmt) {
-            die("Prepare failed: " . $mysqli->error);
-        }
-        
-        if ($stmt->execute()) {
-            echo "<p style='color:green;'>✅ Book updated successfully!</p>";
+        $result = $mysqli->query($sql);
+        if ($result && $result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            if ($row['borrow_status'] == 'Available') {
+                $sql = "UPDATE `books-table` 
+                        SET borrow_status = 'borrowed', borrower = '$borrower_name' 
+                        WHERE id = $book_id";
+
+                $stmt = $mysqli->prepare($sql);
+                if (!$stmt) {
+                    die("Prepare failed: " . $mysqli->error);
+                }
+                
+                if ($stmt->execute()) {
+                    echo "<p style='color:green;'>✅ Book borrowed successfully!</p>";
+                } else {
+                    echo "<p style='color:red;'>❌ Error: " . $stmt->error . "</p>";
+                }
+
+                $stmt->close();
+            } else {
+                echo "<p style='color:red;'>❌ Book is already borrowed by someone!</p>";
+            }
         } else {
-            echo "<p style='color:red;'>❌ Error: " . $stmt->error . "</p>";
+            echo "<p style='color:red;'>❌ Book not found!</p>";
         }
-
-        $stmt->close();
     }
 
     $sql = "SELECT id, book_name, book_author, book_description, borrow_status, borrower FROM `books-table`";
@@ -68,7 +78,7 @@
     $mysqli->close();
     ?>
 
-    <a href="../admin/admin.html" id="backBtn">Go Back</a>
+    <a href="../user/user.html" id="backBtn">Go Back</a>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>

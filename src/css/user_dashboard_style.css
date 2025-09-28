@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background: #f9f2f2;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #8b6f47;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 6px #8b6f47;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* ===== ADMIN DASHBOARD PAGE ===== */
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    min-height: calc(100vh - 160px);
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+#content p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Dashboard menu */
+#content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#content ul li {
+    margin: 12px 0;
+}
+
+/* Menu buttons */
+#browse_booksBtn,
+#search_booksBtn,
+#borrow_booksBtn,
+#return_booksBtn,
+#logoutBtn {
+    display: inline-block;
+    width: 220px;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Different colors per action */
+#browse_booksBtn {
+    background: #8b6f47;
+}
+
+#browse_booksBtn:hover {
+    background: #6e5434;
+    transform: translateY(-2px);
+}
+
+#borrow_booksBtn {
+    background: #8b6f47;
+}
+
+#borrow_booksBtn:hover {
+    background: #6e5434;
+    transform: translateY(-2px);
+}
+
+#return_booksBtn {
+    background: #8b6f47;
+}
+
+#return_booksBtn:hover {
+    background: #6e5434;
+    transform: translateY(-2px);
+}
+
+#logoutBtn {
+    background: #8b6f47;
+}
+
+#logoutBtn:hover {
+    background: #6e5434;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #8b6f47;
+    color: #ddd;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #f9f2f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

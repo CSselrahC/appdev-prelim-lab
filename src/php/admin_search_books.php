@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library MS</title>
+    <title>Library MS (Admin)</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -46,7 +46,7 @@
         $mysqli->close();
         ?>
     </div>
-    <a href="user_browse_books.php" id="backBtn">Go Back</a>
+    <a href="admin_browse_books.php" id="backBtn">Go Back</a>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>

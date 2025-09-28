@@ -23,9 +23,9 @@
     $sql = "DELETE FROM `books-table` WHERE id = '$book_id'";
 
     if ($mysqli->query($sql) === TRUE) {
-        echo "Book removed successfully";
+        echo "✔️ Book removed successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . $mysqli->error;
+        echo "❌ Error: " . $sql . "<br>" . $mysqli->error;
     }
 
     $sql = "SELECT id, book_name, book_author, book_description, borrow_status, borrower FROM `books-table`";
@@ -51,14 +51,15 @@
     $mysqli->close();
     ?>
 
-    <li><a href="../admin/add_books.html" id="adminBtn">Go Back</a></li>
+    <a href="../admin/admin.html" id="backBtn">Go Back</a>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>
 
         <div id="contacts">
             <p>Contact us:
-                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a>
+                <a href="https://github.com/CSselrahC" target="_blank">CSselrahC</a> | 
+                <a href="https://github.com/cntaxc" target="_blank">cntaxc</a>
             </p>
         </div>
     </footer>
