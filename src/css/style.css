@@ -218,17 +218,3 @@ th {
     background: #6e5434;
     ;
 }
-
-#backBtn {
-    margin: 20px auto 20px auto;
-    padding: 10px 20px;
-    background-color: #8b6f47;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-}
-
-#backBtn:hover {
-    background-color: #6e5434;
-}
