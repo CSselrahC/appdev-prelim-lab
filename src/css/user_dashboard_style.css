@@ -89,15 +89,6 @@ header h1 {
     transform: translateY(-2px);
 }
 
-#search_booksBtn {
-    background: #8b6f47;
-}
-
-#search_booksBtn:hover {
-    background: #6e5434;
-    transform: translateY(-2px);
-}
-
 #borrow_booksBtn {
     background: #8b6f47;
 }

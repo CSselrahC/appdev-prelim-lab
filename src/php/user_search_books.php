@@ -12,46 +12,41 @@
     </header>
     <br>
 
-<?php
-$mysqli = new mysqli("db", "root", "rootpassword", "library-db");
+    <div id="book-list">
+        <?php
+        $mysqli = new mysqli("db", "root", "rootpassword", "library-db");
 
-if ($mysqli->connect_error) {
-    die("Connection failed: " . $mysqli->connect_error);
-}
-
-$search_query = "";
-$sql = "SELECT * FROM `books-table`";
-if (isset($_GET['query'])) {
-    $search_query = $_GET['query'];
-    $sql = "SELECT * FROM `books-table` WHERE book_name LIKE '%$search_query%' OR book_author LIKE '%$search_query%';";
-}
-
-$result = $mysqli->query($sql);
-if ($result->num_rows > 0) {
-    echo "<table border='1'>";
-    echo "<tr>";
-    // Output table headers
-    while ($fieldinfo = $result->fetch_field()) {
-        echo "<th>" . $fieldinfo->name . "</th>";
-    }
-    echo "</tr>";
-
-    // Output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<tr>";
-        foreach ($row as $value) {
-            echo "<td>" . $value . "</td>";
+        if ($mysqli->connect_error) {
+            die("Connection failed: " . $mysqli->connect_error);
         }
-        echo "</tr>";
-    }
-    echo "</table>";
-} else {
-    echo "0 results";
-}
-$mysqli->close();
-?>
 
-    <a href="../user/search_books.html" id="backBtn">Go Back</a>
+        $search_query = "";
+        $sql = "SELECT * FROM `books-table`";
+        if (isset($_GET['query'])) {
+            $search_query = $_GET['query'];
+            $sql = "SELECT * FROM `books-table` WHERE book_name LIKE '%$search_query%' OR book_author LIKE '%$search_query%';";
+        }
+
+        $result = $mysqli->query($sql);
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo '<div class="book-card">';
+                echo '<p><strong>ID:</strong> ' . htmlspecialchars($row['id']) . '</p>';
+                echo '<h3>' . htmlspecialchars($row['book_name']) . '</h3>';
+                echo '<p><strong>Author:</strong> ' . htmlspecialchars($row['book_author']) . '</p>';
+                echo '<p><strong>Description:</strong> ' . htmlspecialchars($row['book_description']) . '</p>';
+                echo '<p><strong>Status:</strong> ' . ($row['borrow_status']) . '</p>';
+                echo '<p><strong>Borrower:</strong> ' . htmlspecialchars($row['borrower'] ? $row['borrower'] : 'N/A') . '</p>';
+                echo '</div>';
+                echo '<br>';
+            }
+        } else {
+            echo "0 results";
+        }
+        $mysqli->close();
+        ?>
+    </div>
+    <a href="user_browse_books.php" id="backBtn">Go Back</a>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>
