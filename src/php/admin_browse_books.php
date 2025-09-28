@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library MS</title>
+    <title>Library MS (Admin)</title>
     <link rel="stylesheet" type="text/css" href="../css/user_browse_style.css">
 </head>
 
@@ -23,7 +23,7 @@
             die("Connection failed: " . $mysqli->connect_error);
         }
 
-        $sql = "SELECT id, book_name, book_author, book_description FROM `books-table`";
+        $sql = "SELECT * FROM `books-table`";
         $result = $mysqli->query($sql);
         ?>
 
@@ -36,6 +36,8 @@
                     echo '<h3>' . htmlspecialchars($row['book_name']) . '</h3>';
                     echo '<p><strong>Author:</strong> ' . htmlspecialchars($row['book_author']) . '</p>';
                     echo '<p><strong>Description:</strong> ' . htmlspecialchars($row['book_description']) . '</p>';
+                    echo '<p><strong>Status:</strong> ' . ($row['borrow_status'] ? 'Borrowed' : 'Available') . '</p>';
+                    echo '<p><strong>Borrower:</strong> ' . htmlspecialchars($row['borrower'] ? $row['borrower'] : 'N/A') . '</p>';
                     echo '</div>';
                 }
             } else {
@@ -44,7 +46,7 @@
             ?>
         </div>
     </div>
-    <a href="../user/user.html" id="backBtn">Go Back</a>
+    <a href="../admin/admin.html" id="backBtn">Go Back</a>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>

@@ -62,7 +62,14 @@ header h1 {
     margin: 12px 0;
 }
 
+#test {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 /* Menu buttons */
+#browse_booksBtn,
 #add_booksBtn,
 #manage_booksBtn,
 #remove_booksBtn,
@@ -79,6 +86,15 @@ header h1 {
 }
 
 /* Different colors per action */
+#browse_booksBtn {
+    background: #8b6f47;
+}
+
+#browse_booksBtn:hover {
+    background: #6e5434;
+    transform: translateY(-2px);
+}
+
 #add_booksBtn {
     background: #8b6f47;
 }
