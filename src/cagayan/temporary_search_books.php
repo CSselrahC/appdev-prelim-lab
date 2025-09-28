@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Library Management System</title>
@@ -65,7 +65,7 @@
 
   <div class="search-container">
     <form method="GET" action="search_books.php">
-      <input type="text" name="query" placeholder="ðŸ” Search for a book...">
+      <input type="text" name="query" placeholder="Search for a books...">
       <button type="submit">Search</button>
     </form>
   </div>
