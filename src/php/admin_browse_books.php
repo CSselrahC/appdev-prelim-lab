@@ -15,6 +15,13 @@
 
     <div id="content">
         <h2>📚 Browse Books</h2>
+        <div class="search-container">
+            <form method="GET" action="admin_search_books.php">
+                <input type="text" name="query" placeholder="Search for a book...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
         <?php
  
         $mysqli = new mysqli("db", "root", "rootpassword", "library-db");
