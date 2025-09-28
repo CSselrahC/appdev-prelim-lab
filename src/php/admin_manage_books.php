@@ -12,15 +12,6 @@
     </header>
     <br>
 
-<?php
-$mysqli = new mysqli("db", "root", "rootpassword", "library-db");
-
-if ($mysqli->connect_error) {
-    die("Connection failed: " . $mysqli->connect_error);
-}
-/* Carandang */
-?>   
-=======
     <?php
     $mysqli = new mysqli("db", "root", "rootpassword", "library-db");
 
@@ -42,9 +33,7 @@ if ($mysqli->connect_error) {
         if (!$stmt) {
             die("Prepare failed: " . $mysqli->error);
         }
-
-        /*$stmt->bind_param("sssi", $edit_Name, $edit_Author, $edit_Description, $book_id);*/
-
+        
         if ($stmt->execute()) {
             echo "<p style='color:green;'>✅ Book updated successfully!</p>";
         } else {
@@ -79,7 +68,7 @@ if ($mysqli->connect_error) {
     $mysqli->close();
     ?>
 
-    <li><a href="../admin/admin.html" id="adminBtn">Go Back</a></li>
+    <li><a href="../admin/admin.html" id="goBackBtn">Go Back</a></li>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>
@@ -91,4 +80,3 @@ if ($mysqli->connect_error) {
     </footer>
 </body>
 </html>
->>>>>>> ca9b877a3aae0dbed1fb9c18167cbd9db3d463bf
