@@ -80,7 +80,7 @@
         $conn->close();
     ?>
 
-    <a href="../user/user.html" id="backBtn">Go Back</a>
+    <a href="../user/user.html" id="backBtn">Back</a>
     <footer>
         <p>Simple Library Management System</p>
         <p>CCS112 - Applications Development and Emerging Technologies</p>
