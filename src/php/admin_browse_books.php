@@ -36,7 +36,7 @@
                     echo '<h3>' . htmlspecialchars($row['book_name']) . '</h3>';
                     echo '<p><strong>Author:</strong> ' . htmlspecialchars($row['book_author']) . '</p>';
                     echo '<p><strong>Description:</strong> ' . htmlspecialchars($row['book_description']) . '</p>';
-                    echo '<p><strong>Status:</strong> ' . ($row['borrow_status'] ? 'Borrowed' : 'Available') . '</p>';
+                    echo '<p><strong>Status:</strong> ' . ($row['borrow_status']) . '</p>';
                     echo '<p><strong>Borrower:</strong> ' . htmlspecialchars($row['borrower'] ? $row['borrower'] : 'N/A') . '</p>';
                     echo '</div>';
                 }

@@ -23,7 +23,7 @@
             die("Connection failed: " . $mysqli->connect_error);
         }
 
-        $sql = "SELECT id, book_name, book_author, book_description FROM `books-table`";
+        $sql = "SELECT * FROM `books-table`";
         $result = $mysqli->query($sql);
         ?>
 
@@ -36,6 +36,8 @@
                     echo '<h3>' . htmlspecialchars($row['book_name']) . '</h3>';
                     echo '<p><strong>Author:</strong> ' . htmlspecialchars($row['book_author']) . '</p>';
                     echo '<p><strong>Description:</strong> ' . htmlspecialchars($row['book_description']) . '</p>';
+                    echo '<p><strong>Status:</strong> ' . ($row['borrow_status']) . '</p>';
+                    echo '<p><strong>Borrower:</strong> ' . htmlspecialchars($row['borrower'] ? $row['borrower'] : 'N/A') . '</p>';
                     echo '</div>';
                 }
             } else {
