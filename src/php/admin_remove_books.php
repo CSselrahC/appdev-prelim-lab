@@ -23,9 +23,9 @@
     $sql = "DELETE FROM `books-table` WHERE id = '$book_id'";
 
     if ($mysqli->query($sql) === TRUE) {
-        echo "Book removed successfully";
+        echo "✔️ Book removed successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . $mysqli->error;
+        echo "❌ Error: " . $sql . "<br>" . $mysqli->error;
     }
 
     $sql = "SELECT id, book_name, book_author, book_description, borrow_status, borrower FROM `books-table`";
