@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library MS</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Library Management System - Manage Books</h1>
-    </header>
-    <br>
+<?php
+$mysqli = new mysqli("db", "root", "rootpassword", "library-db");
 
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+/* Carandang */
+?>   
+=======
     <?php
     $mysqli = new mysqli("db", "root", "rootpassword", "library-db");
 
@@ -81,3 +76,4 @@
     </footer>
 </body>
 </html>
+>>>>>>> ca9b877a3aae0dbed1fb9c18167cbd9db3d463bf
