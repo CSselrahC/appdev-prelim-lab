@@ -119,19 +119,70 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-<<<<<<< HEAD
-=======
 
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 table, th, td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
 }
 th {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
->>>>>>> 5bbc6d73ea1308949223559536461949b13efee8
+
+
+/* Admin Add Books Page */
+#addBooksSubmitBtn {
+    width: 100%;
+    background-color: #d7890c;
+    color: black;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addBooksSubmitBtn:hover {
+    background-color: #9b5d00;
+    color: white;
+}
+
+#addBooksForm {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.addBookLabel {
+    display: block;
+    margin: 16px 0 -20px 0;
+}
+
+.addBookInput {
+    width: 100%;
+    padding: 12px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#goBackBtn {
+    margin: 20px auto 20px auto;
+    padding: 10px 20px;
+    background-color: #8b6f47;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#goBackBtn:hover {
+    background-color: #6e5434;
+}
