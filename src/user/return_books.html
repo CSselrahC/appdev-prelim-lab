@@ -11,9 +11,18 @@
             <h1>Library Management System</h1>
         </header>
 
-        <div id="content">
+        <div id="returnContent">
             <p>Welcome to our Library Management System.</p>
-            
+            <p>Please fill out the form below to return a book.</p>
+            <form action="../php/user_return_books.php" method="POST">
+                <label for="returner_name">Your Name:</label><br>
+                <input type="text" id="returner_name" name="returner_name" required><br><br>
+
+                <label for="book_id">Enter Book ID:</label><br>
+                <input type="text" id="book_id" name="book_id" required><br><br>
+
+                <button type="submit">Return Book</button>
+            </form>
         </div>
 
         <footer>

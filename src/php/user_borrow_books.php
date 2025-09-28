@@ -28,7 +28,7 @@
         $result = $mysqli->query($sql);
         if ($result && $result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            if ($row['borrow_status'] == 'available') {
+            if ($row['borrow_status'] == 'Available') {
                 $sql = "UPDATE `books-table` 
                         SET borrow_status = 'borrowed', borrower = '$borrower_name' 
                         WHERE id = $book_id";
