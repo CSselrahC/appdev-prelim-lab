@@ -11,20 +11,27 @@
             <h1>Library Management System</h1>
         </header>
 
-        <div id="content">
-            <form action="../php/admin_add_books.php" method="post">
-                <label for="book_name">Book Title:</label><br>
-                <input type="text" id="book_name" name="name" required><br>
+        <div id="addBooksContent">
+            <form action="../php/admin_add_books.php" method="post" id="addBooksForm">
+                <label for="book_name" class="addBookLabel">Book Title:</label><br>
+                <input type="text" id="book_name" class="addBookInput" name="name" required><br>
 
-                <label for="book_author">Author:</label><br>
-                <input type="text" id="book_author" name="author"><br>
+                <label for="book_author" class="addBookLabel">Author:</label><br>
+                <input type="text" id="book_author" class="addBookInput" name="author"><br>
 
-                <label for="book_description">Description:</label><br>
-                <input type="text" id="book_description" name="description"><br><br>
+                <label for="book_description" class="addBookLabel">Description:</label><br>
+                <input type="text" id="book_description" class="addBookInput" name="description"><br><br>
 
-                <input type="submit" value="Add Book">
-            </form> 
+                <input type="submit" value="Add Book" id="addBooksSubmitBtn">
+
+                <br><br>
+                <a href="admin.html" id="goBackBtn">Go Back</a>
+            </form>
+
+            
         </div>
+
+        
 
         <footer>
             <p>Simple Library Management System</p>
