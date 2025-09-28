@@ -6,4 +6,3 @@ if ($mysqli->connect_error) {
 }
 /* Carandang */
 ?>   
-
